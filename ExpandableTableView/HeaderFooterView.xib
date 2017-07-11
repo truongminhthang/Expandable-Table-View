@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderFooterView" customModule="ExpandableTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ8-e7-vhO">
+                    <rect key="frame" x="0.0" y="41" width="28" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="AmW-Qr-CDH"/>
+                    </constraints>
+                    <state key="normal" image="Sort_down"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="200" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJM-Cw-4xm">
+                    <rect key="frame" x="64" y="43.5" width="271" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJz-nR-ieF">
+                    <rect key="frame" x="339" y="41" width="32" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="m6r-Ka-8EV"/>
+                    </constraints>
+                    <state key="normal" image="Unchecked"/>
+                    <state key="selected" image="Checked"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0s-Iq-BhE">
+                    <rect key="frame" x="32" y="39.5" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="x0s-Iq-BhE" secondAttribute="height" id="Opg-JZ-Wl8"/>
+                        <constraint firstAttribute="width" constant="28" id="ZgO-xt-DeM"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UJz-nR-ieF" secondAttribute="trailing" constant="4" id="2dr-2j-6s3"/>
+                <constraint firstItem="YJM-Cw-4xm" firstAttribute="leading" secondItem="x0s-Iq-BhE" secondAttribute="trailing" constant="4" id="628-26-jIV"/>
+                <constraint firstItem="YJM-Cw-4xm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IxN-Qe-W90"/>
+                <constraint firstItem="UJz-nR-ieF" firstAttribute="leading" secondItem="YJM-Cw-4xm" secondAttribute="trailing" constant="4" id="Jwe-gv-byL"/>
+                <constraint firstItem="yZ8-e7-vhO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KZ9-Qb-dGL"/>
+                <constraint firstItem="x0s-Iq-BhE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MQK-AU-xy8"/>
+                <constraint firstItem="x0s-Iq-BhE" firstAttribute="leading" secondItem="yZ8-e7-vhO" secondAttribute="trailing" constant="4" id="bQN-EV-igr"/>
+                <constraint firstItem="UJz-nR-ieF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gGu-6p-nLu"/>
+                <constraint firstItem="yZ8-e7-vhO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="n58-Ng-Jb0"/>
+            </constraints>
+            <connections>
+                <outlet property="headerImageView" destination="x0s-Iq-BhE" id="ESF-tP-ovV"/>
+                <outlet property="titleLabel" destination="YJM-Cw-4xm" id="EkT-zR-MpX"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="223"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Checked" width="25" height="25"/>
+        <image name="Sort_down" width="25" height="25"/>
+        <image name="Unchecked" width="25" height="25"/>
+    </resources>
+</document>

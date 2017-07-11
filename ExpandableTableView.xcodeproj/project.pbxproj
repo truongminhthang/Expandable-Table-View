@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		603BE1031F0E1AA400F50C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603BE1021F0E1AA400F50C7E /* AppDelegate.swift */; };
-		603BE1051F0E1AA400F50C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603BE1041F0E1AA400F50C7E /* ViewController.swift */; };
 		603BE1081F0E1AA400F50C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603BE1061F0E1AA400F50C7E /* Main.storyboard */; };
 		603BE10A1F0E1AA400F50C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603BE1091F0E1AA400F50C7E /* Assets.xcassets */; };
 		603BE10D1F0E1AA400F50C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603BE10B1F0E1AA400F50C7E /* LaunchScreen.storyboard */; };
+		603C581C1F13648500889079 /* SectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C581B1F13648500889079 /* SectionEnum.swift */; };
+		609B2EE31F1310610002F303 /* HeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609B2EE21F1310610002F303 /* HeaderFooterView.xib */; };
+		60B1ACD71F145670007A1CF7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B1ACD61F145670007A1CF7 /* CustomCell.swift */; };
+		60DA7E8B1F0E1FC100D13BD7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA7E8A1F0E1FC100D13BD7 /* TableViewController.swift */; };
+		60DA7EBA1F0E318400D13BD7 /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA7EB91F0E318400D13BD7 /* HeaderFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		603BE0FF1F0E1AA400F50C7E /* ExpandableTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		603BE1021F0E1AA400F50C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		603BE1041F0E1AA400F50C7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		603BE1071F0E1AA400F50C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		603BE1091F0E1AA400F50C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		603BE10C1F0E1AA400F50C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		603BE10E1F0E1AA400F50C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		603C581B1F13648500889079 /* SectionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionEnum.swift; sourceTree = "<group>"; };
+		609B2EE21F1310610002F303 /* HeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderFooterView.xib; sourceTree = "<group>"; };
+		60B1ACD61F145670007A1CF7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		60DA7E8A1F0E1FC100D13BD7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		60DA7EB91F0E318400D13BD7 /* HeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				603BE1021F0E1AA400F50C7E /* AppDelegate.swift */,
-				603BE1041F0E1AA400F50C7E /* ViewController.swift */,
+				60DA7E8A1F0E1FC100D13BD7 /* TableViewController.swift */,
+				603C581B1F13648500889079 /* SectionEnum.swift */,
 				603BE1061F0E1AA400F50C7E /* Main.storyboard */,
+				60DA7EB91F0E318400D13BD7 /* HeaderFooterView.swift */,
+				60B1ACD61F145670007A1CF7 /* CustomCell.swift */,
+				609B2EE21F1310610002F303 /* HeaderFooterView.xib */,
 				603BE1091F0E1AA400F50C7E /* Assets.xcassets */,
 				603BE10B1F0E1AA400F50C7E /* LaunchScreen.storyboard */,
 				603BE10E1F0E1AA400F50C7E /* Info.plist */,
@@ -122,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609B2EE31F1310610002F303 /* HeaderFooterView.xib in Resources */,
 				603BE10D1F0E1AA400F50C7E /* LaunchScreen.storyboard in Resources */,
 				603BE10A1F0E1AA400F50C7E /* Assets.xcassets in Resources */,
 				603BE1081F0E1AA400F50C7E /* Main.storyboard in Resources */,
@@ -135,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603BE1051F0E1AA400F50C7E /* ViewController.swift in Sources */,
+				60DA7EBA1F0E318400D13BD7 /* HeaderFooterView.swift in Sources */,
 				603BE1031F0E1AA400F50C7E /* AppDelegate.swift in Sources */,
+				60B1ACD71F145670007A1CF7 /* CustomCell.swift in Sources */,
+				60DA7E8B1F0E1FC100D13BD7 /* TableViewController.swift in Sources */,
+				603C581C1F13648500889079 /* SectionEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = ExpandableTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigZeroAcademy.ExpandableTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,7 +300,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = ExpandableTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigZeroAcademy.ExpandableTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +330,7 @@
 				603BE1131F0E1AA400F50C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
